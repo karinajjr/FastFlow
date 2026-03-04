@@ -1,0 +1,110 @@
+{
+    "nav": {
+        "about": "Biz haqimizda",
+        "automation": "Avtomatlashtirish",
+        "services": "Xizmatlar",
+        "process": "Jarayon",
+        "contact": "Aloqa"
+    },
+    "hero": {
+        "title1": "Biznesni",
+        "title2": "to`liq",
+        "title3": "Avtomatlashtirish",
+        "description": "Biz qo‘l mehnati o‘rniga ishlaydigan tizimlarni joriy qilamiz. \nJarayonlarni avtomatlashtiramiz va o‘sish uchun raqamli infratuzilma quramiz",
+        "button": "Ariza qoldirish"
+    },
+    "stats": {
+        "efficiency": "Operatsion samaradorlik o‘sishi",
+        "uchun": "",
+        "manual": "Gacha qo‘l \nmehnatini qisqartirish",
+        "autopilot": "Biznes 24/7 ishlashi"
+    },
+    "аutomation": {
+        "title_small": "Nimalarni beradi",
+        "reduction_percent": "-25%",
+        "reduction_text": "Operatsion\nxarajatlarni\n kamaytirish",
+        "main_title": "Avtomatlashtirish",
+        "description": "Avtomatlashtirish - bu raqamli tizimlarni joriy etish bo‘lib, ular rutin jarayonlarni o‘z zimmasiga oladi va barcha bo‘limlarni yagona infratuzilmaga birlashtiradi. Savdo, moliya, arizalar va kommunikatsiyalar avtomatik ishlaydi: tezroq, aniqroq va doimiy qo‘l bilan nazorat qilmasdan.",
+        "button_apply": "Ariza berish",
+        "saved_money": "$3,200,000+",
+        "saved_text": "Mijozlarga tejash",
+        "projects_info": "Amalga oshirilgan\nloyihalar bo‘yicha ma’lumot"
+    },
+    "process": {
+        "subtitle": "Ish bosqichlari haqida bilib oling",
+        "title": "Qanday ishlaymiz",
+        "description": "Biz mavjud biznes jarayonlarini tahlil qilamiz, zaif joylar va o‘sish nuqtalarini aniqlaymiz. Operatsiyalarni soddalashtiradigan va samaradorlikni oshiradigan yechimlarni loyihalashtiramiz. Har bir joriy etish kompaniyaning aniq maqsadlariga mos ravishda - uning tuzilmasi, vazifalari va hajmini hisobga olgan holda yaratiladi.",
+        "button_apply": "Ariza qoldirish",
+        "steps": {
+            "1": "Jarayonlarni \ndiagnostika va audit",
+            "2": "Avtomatlashtirishni \nloyihalashtirish",
+            "3": "Tizimlar va integratsiyalarni \njoriy etish",
+            "4": "Qo‘llab-quvvatlash va \nmiqyoslash"
+        },
+        "result_title": "Biznes uchun natija",
+        "result_description": "Biznes alohida qo‘lda bajariladigan operatsiyalar to‘plami sifatida emas, tizim sifatida ishlay boshlaydi. Jarayonlar yagona raqamli infratuzilmaga joylashtiriladi, hamma narsa oshkora, boshqariladigan va kengaytiriladigan bo‘ladi",
+        "result_items": {
+            "accelerate": "Jarayonlar tezlashadi",
+            "reduce_errors": "Xatoliklar kamayadi",
+            "team_focus": "Jamoa diqqatini jamlaydi"
+        },
+        "secure_system": "Xavfsiz tizim"
+    },
+    "services": {
+        "title_top": "Sizning \nBiznesingiz   ",
+        "title_bottom": "Biz nima qila \nolamiz ",
+        "button_center": "Uchun ",
+        "cards": [
+            {
+                "title": "Savdo \nva CRM",
+                "dotColor": "#B5ED3D",
+                "description": "Arizalarni qayta ishlash, leadlarni taqsimlash va bitimlarni nazorat qilishni avtomatlashtiramiz"
+            },
+            {
+                "title": "Marketing va \nSMM",
+                "dotColor": "#4D9DFF",
+                "description": "Avto funnel, trigger xabarnomalar va leadlarni ishlov berishni sozlaymiz"
+            },
+            {
+                "title": "Moliyaviy va \nbuxgalteriya",
+                "dotColor": "#FF5A5A",
+                "description": "Hisob-kitob, to‘lovlar va pul harakatini avtomatlashtiramiz"
+            },
+            {
+                "title": "Kommunikatsiya \nmarkazi",
+                "dotColor": "#FF7DE9",
+                "description": "Avto funnel, trigger xabarnomalar va leadlarni ishlov berishni sozlaymiz"
+            },
+            {
+                "title": "Analitika va \nhisobot",
+                "dotColor": "#40D95C",
+                "description": "Ma’lumotlarni real vaqt rejimida yig‘ish va vizualizatsiyani sozlaymiz"
+            },
+            {
+                "title": "Boshqaruv va \namaliyotlar",
+                "dotColor": "#FF37FF",
+                "description": "Vazifalar, jarayonlar va bo‘limlar o‘rtasidagi o‘zaro aloqani optimallashtiramiz"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Bugun biznesingizni \navtomatlashtirishga tayyormisiz?",
+        "input_placeholder": "Email",
+        "button": "Ariza yuborish"
+    },
+    "footer": {
+        "title_top": "Boshlaymiz",
+        "highlight": "transformatsiyani",
+        "title_bottom": "biznesni?",
+        "input_placeholder": "Email",
+        "button_alt": "Yuborish",
+        "nav": [
+            "Biz haqimizda",
+            "Avtomatlashtirish",
+            "Xizmatlar",
+            "Jarayon",
+            "Kontaktlar"
+        ],
+        "copyright": "© 2026 FastFlow. Barcha huquqlar himoyalangan"
+    }
+}

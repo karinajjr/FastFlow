@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Druk Wide Cyr";
+  src: url("https://db.onlinewebfonts.com/t/e7fa3e0f70e1466b2f73ee1ac39c8c30.eot");
+  src:
+    url("https://db.onlinewebfonts.com/t/e7fa3e0f70e1466b2f73ee1ac39c8c30.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e7fa3e0f70e1466b2f73ee1ac39c8c30.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e7fa3e0f70e1466b2f73ee1ac39c8c30.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/e7fa3e0f70e1466b2f73ee1ac39c8c30.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e7fa3e0f70e1466b2f73ee1ac39c8c30.svg#Druk Wide Cyr")
+      format("svg");
+}
+
+:root {
+  --font-main: "Montserrat", sans-serif;
+  --font-wide: "Druk Wide Cyr", sans-serif;
+}
+
+.hero-title {
+  font-family: var(--font-wide);
+  font-weight: 700;
+  align-items: center;
+}
+
+.hero-subtitle {
+  font-family: var(--font-main);
+  max-width: 800px;
+}
+
+#process-circle {
+  position: relative;
+  z-index: 1;
+}
+
+#process-circle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  padding: 4px;
+  /* border thickness */
+
+  background: linear-gradient(
+    rgb(181, 237, 61),
+    rgb(65, 46, 237),
+    rgb(181, 237, 61),
+    rgb(67, 48, 237)
+  );
+
+  /* This creates the hollow center */
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* :root {
+  --font-main: "Montserrat", sans-serif;
+  --font-wide: "Druk Wide Cyr", sans-serif;
+} */
+
+/* #pod-kluch-clip {
+  position: relative;
+  z-index: 0;
+}
+
+#pod-kluch-clip::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background-color: #b5ed3d;
+  border-radius: 9999px;
+  z-index: -1;
+
+  transform: scaleX(0.5);
+  transform-origin: center center;
+} */
