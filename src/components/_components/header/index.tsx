@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import LangSwitcher from "../../language/lang-switcher";
 import { useTranslation } from "react-i18next";
+import CountUp from "./count/count-up";
 
 export default function Header() {
   const { t } = useTranslation();
@@ -8,6 +9,12 @@ export default function Header() {
   const [active, setActive] = useState<string>("about");
   const [bgStyle, setBgStyle] = useState({ width: 0, left: 0 });
   const containerRef = useRef<HTMLDivElement>(null);
+  const [start, setStart] = useState(false);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    setStart(true); // старт анимации сразу при загрузке
+  }, []);
 
   const links = [
     { id: "about", label: t("nav.about") },
@@ -128,25 +135,32 @@ export default function Header() {
         {/* Статистика */}
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-15 mx-9">
           <div className="hero-subtitle flex items-center justify-center gap-3 bg-[#1F2123] rounded-full px-6 py-5">
-            <span className="text-4xl ">+40%</span>
-            <p className="hero-subtitle whitespace-pre-line text-white/70 text-xs">
+            <span className="text-4xl text-white">
+              +{start ? <CountUp from={0} to={40} duration={2} /> : 0}%
+            </span>
+            <p className="whitespace-pre-line text-white/70 text-xs">
               {t("stats.efficiency")}
             </p>
           </div>
 
           <div className="hero-subtitle flex items-center justify-center gap-6 bg-[#1F2123] rounded-full px-3 lg:px-4 py-5">
             <div className="hero-subtitle flex items-end gap-3">
-              <span className="text-xl ">{t("stats.uchun")} </span>
-              <span className="text-4xl ">70%</span>
+              <span className="text-xl">{t("stats.uchun")}</span>
+              <span className="text-4xl text-white">
+                {start ? <CountUp from={0} to={70} duration={2} /> : 0}%
+              </span>
             </div>
-            <p className="hero-subtitle whitespace-pre-line  text-white/70 text-xs">
+            <p className="hero-subtitle whitespace-pre-line text-white/70 text-xs">
               {t("stats.manual")}
             </p>
           </div>
 
           <div className="hero-subtitle flex items-center justify-center gap-6 bg-[#1F2123] rounded-full px-2 lg:px-4 py-5">
-            <span className="text-4xl ">24/7</span>
-            <p className="hero-subtitle  whitespace-pre-line  text-white/70 text-xs">
+            <span className="text-4xl text-white">
+              {start ? <CountUp from={0} to={24} duration={2} /> : 0}/
+              {start ? <CountUp from={0} to={7} duration={2} /> : 0}
+            </span>
+            <p className="hero-subtitle whitespace-pre-line text-white/70 text-xs">
               {t("stats.autopilot")}
             </p>
           </div>
