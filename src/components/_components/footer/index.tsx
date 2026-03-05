@@ -7,8 +7,12 @@ export default function Footer() {
 
   const handleSubmit = () => {
     if (!email) return;
-    // Можно заменить на любую логику отправки
-    console.log("Email:", email);
+
+    // Перекидывание в Telegram-канал
+    const tgLink = `tg://resolve?domain=fastflow_uz&text=Мой email: ${encodeURIComponent(email)}`;
+    window.location.href = tgLink;
+
+    // Очищаем поле
     setEmail("");
   };
 
