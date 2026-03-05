@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import CountUp from "./count/count-up";
 
 export default function Header() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState<string>("about");
   const [bgStyle, setBgStyle] = useState({ width: 0, left: 0 });
@@ -38,7 +38,7 @@ export default function Header() {
     if (activeEl) {
       setBgStyle({ width: activeEl.offsetWidth, left: activeEl.offsetLeft });
     }
-  }, [active]);
+  }, [active, i18n.language]);
 
   return (
     <div className="min-h-screen bg-black bg-[url('/bg/bg-header.svg')] bg-cover bg-center flex flex-col rounded-none md:rounded-b-[60px]">
