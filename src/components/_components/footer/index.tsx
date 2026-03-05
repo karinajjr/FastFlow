@@ -45,7 +45,7 @@ export default function Footer() {
             />
             <button
               onClick={handleSubmit}
-              className="absolute right-1 top-1/2 -translate-y-1/2 bg-[#0A6AEB] text-black rounded-full h-11 w-11 text-xl hover:bg-white hover:border-white transition-colors flex items-center justify-center"
+              className="absolute right-1 top-1/2 -translate-y-1/2 bg-[#0A6AEB] text-black rounded-full h-11 w-11 text-xl border-2 border-[#0A6AEB] hover:bg-white hover:border-[#0A6AEB] transition-colors flex items-center justify-center"
               aria-label={t("footer.button_alt")}
             >
               <img
