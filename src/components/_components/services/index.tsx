@@ -101,7 +101,7 @@ export default function Services() {
           })}
         </div>
 
-        <div className="mt-28 md:mt-16 flex flex-col items-stretch lg:hidden relative">
+        <div className="mt-28 lg:mt-16 flex flex-col items-stretch lg:hidden relative">
           {services.map((card, index) => (
             <div
               key={index}

@@ -118,9 +118,11 @@ export default function Header() {
             {t("hero.description")}
           </p>
 
-          <button className="flex justify-center items-center bg-[#0A6AEB] px-12 md:px-8 py-4 md:py-2.5 rounded-full text-sm my-5">
-            {t("hero.button")}
-          </button>
+          <a href="#contact">
+            <button className="flex justify-center items-center bg-[#0A6AEB] px-12 md:px-8 py-4 md:py-2.5 rounded-full text-sm my-5">
+              {t("hero.button")}
+            </button>
+          </a>
         </section>
 
         {/* Статистика */}

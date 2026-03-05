@@ -39,16 +39,18 @@ export default function Automation() {
             {t("аutomation.description")}
           </p>
 
-          <button className="w-40 md:w-32 h-10 bg-blue-600 text-white rounded-full hero-subtitle text-sm">
-            {t("аutomation.button_apply")}
-          </button>
+          <a href="#contact">
+            <button className="w-40 md:w-32 h-10 bg-blue-600 text-white rounded-full hero-subtitle text-sm">
+              {t("аutomation.button_apply")}
+            </button>
+          </a>
         </div>
 
-        <div className="hidden md:block relative right-12 w-23 h-21 rounded-full bg-blue-600 flex items-center justify-center shadow-lg">
+        <div className="hidden md:block relative right-12 w-24 h-20 object-contain rounded-full bg-blue-600 flex items-center justify-center ">
           <img
             src="/logo/fast-flow-logo.svg"
             alt="Логотип"
-            className="h-15 w-15"
+            className="h-15 w-15 relative top-2 left-1"
           />
         </div>
 
@@ -63,7 +65,7 @@ export default function Automation() {
           </div>
 
           <div className="bg-[#F0F0F0] w-48 h-20 flex justify-center items-center rounded-full">
-            <span className="text-sm text-center font-medium whitespace-pre-line">
+            <span className="leading-none text-sm text-center font-medium whitespace-pre-line px-2">
               {t("аutomation.projects_info")}
             </span>
           </div>
@@ -96,14 +98,14 @@ export default function Automation() {
           </div>
 
           {/* 2 элемент (главный) */}
-          <div className="relative top-10 right-20 z-10 bg-[#F0F0F0] w-48 h-18 flex justify-center items-center rounded-full shadow-lg">
-            <span className="text-sm leading-none text-center font-medium whitespace-pre-line">
+          <div className="relative top-10  right-20 z-10 bg-[#F0F0F0] w-48 h-18 flex justify-center items-center rounded-full shadow-lg">
+            <span className="text-sm leading-none text-center font-medium whitespace-pre-line px-2">
               {t("аutomation.projects_info")}
             </span>
           </div>
 
           {/* 3 элемент (сзади снизу) */}
-          <div className="-rotate-12 absolute top-20 right-27 z-0 w-22 h-21 rounded-full bg-blue-600 flex items-center justify-center shadow-lg">
+          <div className="-rotate-12 absolute top-20 right-27  z-0 w-22 h-21 rounded-full bg-blue-600 flex items-center justify-center shadow-lg">
             <img
               src="/logo/fast-flow-logo.svg"
               alt="Логотип"
