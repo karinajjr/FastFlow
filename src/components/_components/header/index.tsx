@@ -10,7 +10,6 @@ export default function Header() {
   const [bgStyle, setBgStyle] = useState({ width: 0, left: 0 });
   const containerRef = useRef<HTMLDivElement>(null);
   const [start, setStart] = useState(false);
-  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     setStart(true); // старт анимации сразу при загрузке

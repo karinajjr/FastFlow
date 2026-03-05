@@ -103,6 +103,7 @@ export default function CountUp({
         clearTimeout(durationTimeoutId);
       };
     }
+    return undefined;
   }, [
     isInView,
     startWhen,
